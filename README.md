@@ -1,0 +1,3 @@
+# Next.js 15 Client-Side Fetch Error
+
+This repository demonstrates a common error encountered when using `fetch` within a Next.js 15 application.  The problem arises when trying to make a fetch request from a client-side component before the component has fully mounted on the client.  This results in an error because `fetch` is not automatically available in the server-side rendering context, and Next.js isn't correctly handling the asynchronous request during client hydration.
